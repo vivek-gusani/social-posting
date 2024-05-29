@@ -1,0 +1,46 @@
+.MasonryLayout {
+  .masonry-grid {
+    width: 1400px;
+    columns: 4;
+    gap: 74px;
+    overflow: auto;
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: auto;
+    overflow: auto;
+  }
+  .masonry-grid_column {
+    background-clip: padding-box;
+  }
+
+  .grid-item {
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 74px;
+  }
+
+  img {
+    max-height: 520px;
+    width: 284px;
+    
+  }
+
+  .grid-image-wrapper {
+    
+  }
+}
+
+@media screen and (width <= 800px) {
+
+  .MasonryLayout {
+    .masonry-grid {
+      gap: 36px;
+
+      .grid-item {
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,106 @@
+.dialog-modal::backdrop {
+  background: rgba(15, 15, 15, 0.9);
+
+}
+
+.dialog-modal {
+  width: 364px;
+  border: none;
+  border-radius: 20px;
+
+  background: var(
+    --empty-glass,
+    linear-gradient(
+      173deg,
+      rgba(36, 36, 36, 0.8) 0%,
+      rgba(58, 58, 58, 0.6) 100%
+    )
+  );
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.dialog-modal {
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.SignInModal {
+  .btn-main {
+    color: var(--dark, #031825);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    display: flex;
+    width: 316px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+
+    background: var(--primary, #58bdf8);
+    width: 316px;
+    margin: 0 auto;
+  }
+
+  .btn-google {
+    color: var(--white, #f2f2f2);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    display: flex;
+    width: 316px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+
+    background: #db4437;
+    width: 316px;
+    margin: 0 auto;
+  }
+
+  .form-input {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.977);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    height: 42px;
+    width: 316px;
+    padding: 0 14px;
+    margin: 0 auto;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .sign-in-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
